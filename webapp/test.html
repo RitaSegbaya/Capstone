@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Transit with Tro-tro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+    
+    <!-- My custom styles-->
+    <link href="css/custom.css" rel="stylesheet">
+	
+<!-- 	Web Browser thumbnail image -->
+    <link rel="shortcut icon" href="#">
+
+
+  </head>
+  
+  <body>
+  	
+  	
+  	<div class="sidebar">
+  		<form action="">
+  			<label for="start">Start</label>
+  		 	<input type="text" name="" list="stops-datalist" id="start" placeholder="Type a stop name" value="" onkeyup="showSuggestions('start')" onblur="hideSuggestions('start')">
+			 <ul class="dropdown-menu suggestions" id="start-suggestions" role="menu" style="overflow-y: auto; min-height: 33px;"></ul>
+			 
+			<div class="clearfix"></div>
+  		 
+  		 	<label for="end">End</label>
+  		 	<input type="text" name="" id="end" placeholder="Type a stop name" onkeyup="showSuggestions('end')" onblur="hideSuggestions('end')">
+  		 	<ul class="dropdown-menu suggestions" id="end-suggestions" role="menu" style="overflow-y: auto; min-height: 33px;"></ul>
+  		 
+  		</form>
+ 		 
+  		 
+  		
+  		 
+  		
+  		<div class="select-div" id="select-me">
+  			<select name="info" class="mbn">
+				<option value="1">Least Distance</option>
+				<option value="2">Shortest Travel time</option>
+			</select>
+  		</div>
+  		
+  		<p class="link-behaviour go-link" style="visibility: hidden" onclick="go()">GO</p>
+  		
+  		<div class="clearfix select-clearfix"></div> 
+		
+		<div class="results">
+<!--
+			<div class="route-summary">
+				<p class="title">25 min journey</p>
+				<p class="first-action">Take a bus headed to Awoshie</p>
+				
+				<img src="images/more.png" class="more-link" alt="" on>
+				
+				
+				<div class="route-tags">
+					<p class="rt1">Awoshie</p>
+					<p class="rt2">Gbawe Terminal</p>
+					<p class="rt3">Roundabout Mall</p>
+				</div>
+			</div>
+-->
+			
+<!--			<div class="clearfix select-clearfix"></div>-->
+			
+			
+			<div class="instruction">
+				<p class="transit-action">Take a bus headed to Awoshie <br> Drop off at Terminal Mallam Atta Station Station Station</p>
+				<p class="rt1 tag">Roundabout Mall</p>
+				<a href="#">Details</a>
+			</div>
+			
+		</div>
+		
+		
+  	</div>
+    <div id="map"></div>
+
+    <!-- Load JS -->
+    <script type="text/javascript" src="js/jquery-1.12.1.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/flatui-checkbox.js"></script>
+    <script src="js/flatui-radio.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/application.js"></script>
+    
+    
+    <!-- My JS file-->
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+		var startValid = false;
+		var endValid = false;
+		
+		var shortestPathResult;
+		
+		
+		function showSuggestions(args) {
+			var argsSuggestionjQueryObj = args + "-suggestions";
+			var argsFillFunctionName = "fill" + args + "Field";
+			
+			
+			var searchWords = document.getElementById(args).value;
+				
+			//When no words are in the input field hide suggestions
+			if(searchWords == ""){
+				hideSuggestions(args);
+				return;
+			}
+
+
+			var searchResults = $.parseJSON(dbSearch(searchWords));
+			
+			var suggestionBox = [];
+
+
+			//Collate results
+			for(var i = 0; i < searchResults.data.length && suggestionBox.length < 5; i++){
+				var stop_name = searchResults.data[i][0];
+				var stop_id = searchResults.data[i][1];
+
+				if(suggestionBox.length <= 0){
+					suggestionBox.push([]);
+					suggestionBox[0].push(stop_name);
+					suggestionBox[0].push(stop_id);
+				}
+
+				else{
+					var found = false;
+
+					for(var j = 0; j < suggestionBox.length; j++){
+						if(suggestionBox[j][0] == stop_name){
+							suggestionBox[j].push(stop_id);
+							found = true;
+						}			
+
+					}
+
+					if(!found){
+						suggestionBox.push([]);
+						suggestionBox[suggestionBox.length-1].push(stop_name);
+						suggestionBox[suggestionBox.length-1].push(stop_id);
+					}
+
+
+
+				}
+
+
+			}
+			
+			
+			
+			var resultHTML = "";
+
+			if(searchResults.data.length == 0){
+				resultHTML += "<li rel='0' ><a tabindex='-1' href='#' class='disabled' ><span class='pull-left'>Oops! No such stop</span></a></li>";
+			}else{
+				for(i=0; i < suggestionBox.length; i++){
+					resultHTML += "<li rel='" + i +"'><a tabindex='-1' href='#' class='' onclick='" + argsFillFunctionName + "(this)'><span class='pull-left' stopIdArray = "+ suggestionBox[i].slice(1, suggestionBox[i].length) +">";
+					resultHTML += suggestionBox[i][0];
+					resultHTML += "</span></a></li>";
+				}
+			}
+			document.getElementById(argsSuggestionjQueryObj).innerHTML = resultHTML;
+			document.getElementById(argsSuggestionjQueryObj).classList.add("open");
+		}
+		
+		
+		
+		function hideSuggestions(args) {
+			if(args == "start")
+        		document.getElementById("start-suggestions").classList.remove("open");
+			else if(args == "end")
+				document.getElementById("end-suggestions").classList.remove("open");
+    	}
+		
+		function fillstartField(obj) {
+			document.getElementById("start").value = obj.children[0].innerHTML;
+			var att = document.createAttribute("stopIdArray");
+			att.value = obj.children[0].getAttribute("stopIdArray");
+			document.getElementById("start").setAttributeNode(att);
+			
+			$("#start").focus();
+			hideSuggestions('start');
+			startValid = true;
+			showGo();
+    	}
+		
+		function fillendField(obj) {
+			document.getElementById("end").value = obj.children[0].innerHTML;
+			var att = document.createAttribute("stopIdArray");
+			att.value = obj.children[0].getAttribute("stopIdArray");
+			document.getElementById("end").setAttributeNode(att);
+			
+			$("#end").focus();
+			hideSuggestions('end');
+			endValid = true;
+			showGo();
+    	}
+		
+		function showGo(){
+			if(startValid && endValid){
+				$(".go-link").css("visibility", "visible");
+			}
+		}
+		
+		function go(){
+//			var startNodeID = $("#start").val().substring(0,5);
+//			var endNodeID = $("#end").val().substring(0,5);
+			
+			var startStopsArray =  $("#start").attr('stopIdArray').split(",");
+			var endStopsArray =  $("#end").attr('stopIdArray').split(",");
+			var routingCriteria = $(".filter-option").html();
+			
+			if(routingCriteria == "Shortest Travel time"){
+				routingCriteria="time";	
+			}else{
+				routingCriteria="distance";
+			}
+			
+			
+			for(var i=0; i < startStopsArray.length; i++){
+				for(var j=0; j < endStopsArray.length; j++){
+					var interrimResult = getShortestPath(startStopsArray[i], endStopsArray[j], routingCriteria);
+					console.log(interrimResult[2]);
+					
+					if(i==0 && j==0){
+						shortestPathResult = interrimResult; 
+						
+					}
+					else{
+						if(shortestPathResult[2] > interrimResult[2]){
+							shortestPathResult = interrimResult;
+						}
+//						else if(shortestPathResult[2] >= interrimResult[2] ){
+//							if(shortestPathResult[3] > interrimResult[3])
+//								shortestPathResult = interrimResult;
+//						}
+						
+					}
+					
+				}
+			}
+			
+			//shortestPathResult = getShortestPath(ideali, idealj);
+			$(".results").html(shortestPathResult[0]);
+			calcRoute();
+			
+		}
+		
+		
+		function expandRoute(){
+			$(".results").addClass("expand");
+			$(".more-link").attr("src", "images/close.png");
+			$(".more-link").attr("onclick", "contractRoute()");
+		}
+		
+		
+		function contractRoute(){
+			$(".results").removeClass("expand");
+			$(".more-link").attr("src", "images/more.png");
+			$(".more-link").attr("onclick", "expandRoute()");
+		}
+		
+	</script>
+	
+	<script type="text/javascript">
+		var map;
+		var rt1 = {strokeColor: '#F1CA00',strokeOpacity: 0.7,strokeWeight: 5};
+		var rt2 = {strokeColor: '#65B529',strokeOpacity: 0.6,strokeWeight: 5};
+		var rt3 = {strokeColor: '#B60F03',strokeOpacity: 0.6,strokeWeight: 5};
+		var rt4 = {strokeColor: '#2D2D86',strokeOpacity: 0.6,strokeWeight: 5};
+		var rt5 = {strokeColor: '#001B59',strokeOpacity: 0.6,strokeWeight: 5};
+		var rt6 = {strokeColor: '#165E31',strokeOpacity: 0.6,strokeWeight: 5};
+		var lineColor = [rt1, rt2, rt3, rt4, rt5, rt6];
+		
+		
+		
+
+		function initMap() {
+			map = new google.maps.Map(document.getElementById('map'), {zoom: 12,center: new google.maps.LatLng(5.603006, -0.185690),mapTypeId: 'terrain'});			
+		}
+		
+//		function plotRoutePolyline(){
+//			var routePlanCoordinates = shortestPathResult[1];
+//			
+//			var routePath = new google.maps.Polyline({
+//			  path: routePlanCoordinates,
+//			  geodesic: true,
+//			  strokeColor: '#FF0000',
+//			  strokeOpacity: 1.0,
+//			  strokeWeight: 2
+//			});
+//			
+//			var bounds = new google.maps.LatLngBounds();
+//			for (var i = 0; i < routePlanCoordinates.length; i++) {
+//				bounds.extend(routePlanCoordinates[i]);
+//			}
+//			
+//			routePath.setMap(map);
+//			map.fitBounds(bounds);
+//		}
+		
+		function calcRoute(){
+			initMap();
+			
+			try{
+				shortestPathResult[1].toJSON();
+				var marker = new google.maps.Marker({
+					  position: shortestPathResult[1].toJSON(),
+					  map: map
+					});
+				
+				map.setCenter(shortestPathResult[1].toJSON());
+				map.setZoom(16);
+				return;
+			}catch(Error){
+				
+			}
+			
+
+			
+			
+			var directionsService = new google.maps.DirectionsService();
+			var directionsDisplay = new google.maps.DirectionsRenderer();
+			
+			directionsDisplay.setMap(map);
+			
+			
+			
+			var waypts = [];
+			for(var i = 1; i < shortestPathResult[1].length - 1; i++){
+				waypts.push({
+				  location: shortestPathResult[1][i],
+				  stopover: true
+				});
+			}
+			
+			
+			
+			var start = shortestPathResult[1][0];
+			var end = shortestPathResult[1][shortestPathResult[1].length -1];
+
+			var request = {
+				origin: start,
+				destination: end,
+				waypoints: waypts,
+				travelMode: 'DRIVING'
+				};
+			
+			directionsService.route(request, function(result, status) {
+				var modifiedResult;
+				var displayDirection;
+				var line;
+				var countTotalRoutes = 0;
+				
+				if (status == 'OK') {
+				 	directionsDisplay.setDirections(result);
+//					for(var i = 0; i < result.routes[0].legs.length; i++){
+//						modifiedResult = $.extend(true, {}, result);
+//						modifiedResult.request = result.request;
+//						modifiedResult.geocoded_waypoints = [];
+//						modifiedResult.geocoded_waypoints.push(result.geocoded_waypoints[i]);
+//						modifiedResult.geocoded_waypoints.push(result.geocoded_waypoints[i+1]);
+//						modifiedResult.routes[0].legs = [result.routes[0].legs[i]];
+//						line = lineColor[countTotalRoutes % 6];
+//
+//						displayDirection = new google.maps.DirectionsRenderer({polylineOptions : line, suppressMarkers : true, preserveViewport : true});
+//
+//						displayDirection.setMap(map);
+//						displayDirection.setDirections(modifiedResult);
+//						countTotalRoutes += 1;
+//
+//						modifiedResult = null;
+//					}
+				}
+			});
+			
+			
+		}
+	</script>
+	
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNhpH4Vv522sUArpUabRbcRte9sg2J7m0&callback=initMap"></script>
+	
+	
+  </body>
+</html>

@@ -1,0 +1,653 @@
+route,from_terminal,to_terminal
+002A,37 Lorry Park,Osu Blow Up
+002B,Osu Blow Up,37 Lorry Park
+003A,37 Lorry Park,Tse Addo
+003B,Tse Addo,37 Lorry Park
+004A,Abeka lapaz,Ashaiman Station
+004B,Ashiaman Station,Abeka lapaz
+005A,Abeka lapaz,Ashalaja
+005B,Ashalaja,Abeka lapaz
+006A,Abeka lapaz,Sakumono station
+006B,Sakumono station,Abeka lapaz
+007A,Abeka lapaz,Taifa Station
+007B,Taifa Station,Abeka lapaz
+008A,Abeka lapaz,Tema Main Habour Round About
+008B,Tema Main Habour Round About,Abeka lapaz
+009A,Abeka lapaz,Adeiman
+009B,Adeiman,Abeka lapaz
+010A,Abeka lapaz,Amasaman
+010B,Amasaman,Abeka lapaz
+011A,Abeka lapaz,Circle
+011B,Circle,Abeka lapaz
+012A,Abeka lapaz,Circle Opps. Vodafone
+012B,Alajo Station,Abeka lapaz
+013A,Abeka lapaz,Circle
+013B,Lido Terminal (Circle Overhead),G
+014A,Abeka lapaz,Circle
+014B,Accra CMB,Abeka lapaz
+015A,Abeka lapaz,D.K. Last stop
+015B,Kwabenya,Abeka lapaz
+016A,Abeka lapaz,Sarpeiman
+016B,Sarpeiman,Abeka lapaz
+017A,Abeka lapaz,Kasoa Station
+017B,Kasoa Station,Abeka lapaz
+018A,Abeka lapaz,Kasoa Station
+018B,Kasoa Station,Abeka lapaz
+019A,Abeka lapaz,Kotoku Terminal
+019B,Kotoku Terminal,Abeka lapaz
+020A,Abeka Market station,Accra UTC
+020B,Accra UTC,Abeka Market station
+021A,Abeka lapaz,Dome
+021B,Dome,Abeka lapaz
+023A,Abeka lapaz,Nungua Station
+023B,Sakumono station,Abeka lapaz
+026A,Accra UTC Taxi Rank,Abeka Station near Market
+026B,Abeka Market station,Rawlings Park
+028A,Circle Near Las Palmas (PROTOA),Abeka Station
+028B,Abeka Market station,Circle Near Las Palmas (PROTOA)
+029A,Abeka Market station,Kaneshie Mkt Cmplx
+029B,Kaneshie Mkt Cmplx,Abeka Market station
+030A,Abeka Market station,Mallam Atta Station
+030B,Mallam Atta Station,Abeka Main Markt
+031A,Abeka lapaz,37 Station
+031B,37 Station,Abeka lapaz
+035A,Abeka lapaz,Agape Station
+035B,Agape Station,Abeka lapaz
+036A,Abeka lapaz,Agbogbloshie Station No. 2
+036B,Agbogbloshie Station No. 2,Abeka lapaz
+038A,Abeka lapaz,Amasaman
+038B,Amasaman,Abeka lapaz
+039A,Nyamekye,Aunti Eku Pallas Town
+039B,Aunti Eku Pallas Town,Abeka lapaz
+040A,Abeka lapaz,Ashaiman Station
+040B,Ashiaman Station,Abeka lapaz
+041A,Abeka lapaz,Asofan Station
+041B,Asofan Station,Abeka lapaz
+043A,Abeka lapaz,Kaneshie Mkt Cmplx
+043B,Kaneshie Mkt Cmplx,Abeka lapaz
+044A,Abeka lapaz,Dome
+044B,Dome,Abeka lapaz
+046A,Kaneshie Mkt Cmplx,Abeka lapaz
+046B,Abeka lapaz,Kaneshie Mkt Cmplx
+048A,Abeka lapaz,Korle Bu Station
+048B,Korle Bu Station,Abeka lapaz
+050A,Abeka lapaz,Gbawe Station
+050B,Gbawe Station,Abeka lapaz
+051A,Lapaz Station-Mahean Afuaman,Mahean Station
+051B,Mahean Station,Abeka lapaz
+052A,Abeka lapaz,Mayera last stop
+052B,Mayera last stop,Abeka lapaz
+055A,Abeka lapaz,Osu Blow Up
+055B,Osu Blow Up,Abeka lapaz
+056A,Abeka lapaz,Race Course
+056B,Race Course,Abeka lapaz
+058A,Abeka lapaz,Sotuom VRA
+058B,Sotuom VRA,Abeka lapaz
+061A,Abelemkpe Station,Accra New Tema Station
+061B,Accra New Tema Station,Abelemkpe Station
+064A,Abossey Okai Camara Station,Kasoa Station
+064B,Kasoa Station,Abossey Okai Camara Station
+065A,Accra CMB,Darkuman Station
+065B,Darkuman Station,Orgle Road Station
+066A,Accra Taxi Rank,Nima Overhead Station
+066B,Nima Overhead Station,Accra Taxi Rank
+067A,Accra CMB,Alhaji
+067B,Alhaji,Accra CMB
+070A,Accra End of Motorway,Adjiringanor
+070B,Accra End of Motorway,American House
+071A,Accra End of Motorway,American House
+071B,American House,Accra End of Motorway
+072A,Accra New Town Station,Caprice
+072B,Caprice,Accra Newtown
+074A,New Town Timber Market,Accra Zongo Lane
+075A,Accra Zongo Lane,Dansoman Laststop
+075B,Agege,Accra Zongo Lane
+076A,Achimota,37 Station
+076B,37 Station,Achimota Station
+078A,Caprice,Accra CMB
+078B,Accra UTC,Achimota
+079A,Achimota,Tema Station
+079B,Accra New Tema Station,Achimota
+080A,Achimota Station,Accra UTC
+080B,Accra UTC,Achimota Station
+081A,Achimota Station,Adenta Station
+081B,Adenta Station,Achimota Station
+082A,Achimota Station,Station 082
+082B,Adjiringanor,Achimota Station
+084A,Achimota,Kuntunse - Satelite
+084B,A,Achimota
+085A,Achimota,Akweteman Zongo
+085B,Akweteman Zongo,Achimota
+088A,Achimota Station,Asofan Station
+088B,Asofan Station,Achimota Station
+090A,Achimota Station,Darkuman Station
+090B,Darkuman,Achimota Station
+092A,Achimota Station,Ashognman Estate
+092B,Ashognman Estate,Achimota Station
+093A,Achimota Station,Dome Pillar 2 Station
+093B,Dome Pillar 2 Station,Achimota Station
+094A,Achimota Station,Fise Junction
+094B,Fise Junction,Achimota Station
+095A,Achimota Station,Israel Station
+095B,Israel Station,Achimota Station
+096A,Achimota Station,Kotobabi Down Station
+096B,Kotobabi Down Station,Achimota Station
+098A,Achimota Station,Abeka lapaz
+098B,Abeka lapaz,Achimota Station
+099A,Achimota,Legon Station
+099B,Legon Station,Achimota Station
+100A,Achimota Station,Legon Station
+100B,Legon Station,Achimota Station
+102A,Achimota Station,Madina Station
+102B,Madina Station,Achimota Station
+103A,Achimota,Mallam Attah Station
+103B,Mallam Attah Station,Achimota Station
+104A,Achimota,Adusa Quarters
+104B,Adusa Quarters,Achimota Station
+105A,Achimota,Kotoku Terminal
+105B,Kotoku Terminal,Achimota Station
+107A,Achimota,Ofankor
+107B,Ofankor,Achimota
+112A,Achimota,Ashaiman Station
+112B,Ashiaman Station,Achimota Old Station
+114A,Achimota,Taifa Station
+114B,Taifa Station,Achimota Station
+116A,Achimota,Tema C'mty One
+116B,Tema C'mty One,Achimota Station
+117A,Achimota Station,Tema Main Station
+117B,Tema Main Station,Achimota Station
+118A,Achimota Station,Teshie Nungua
+118B,Nungua Station,Achimota Station
+120A,Achimota,Ashongman
+120B,Ashongman,Achimota
+121A,Achimota,Haatso
+121B,Haatso,Achimota
+122A,Achimota,Sowutuom Station
+122B,Sowutuom Station,Achimota Station
+123A,Achimota Station,Dome
+123B,B,Achimota Station
+139A,Agbogbloshie Station,Chemuna Station
+139B,Chorkor Station,Agbobloshie Station
+140A,Agbogbloshie Station No. 2,Kasoa Station
+143A,Agbogbloshie Station,Mamprobi
+143B,Mamprobi,Agbogbloshie Station
+144A,Agbogbloshie Station No. 2,Mamprobi Camara
+144B,Mamprobi Camara,Agbogbloshie Station
+146A,Agbogbloshie Station,Russia
+146B,Russia,Agbogbloshie Station No. 2
+147A,Agbogbloshie Station,Tema Newtown Terminal
+149A,Agbogbloshie Station,Camara Station
+149B,Camara Station,Agbogbloshie Station
+155A,Kanashie Mkt Cmplx,Akoto Lante
+155B,Akoto Lante,Kaneshie Mkt Cmplx
+156A,Alajo Taxi Rank,Accra CMB
+156B,Accra CMB,Alajo Taxi Rank
+157A,Alajo Taxi Rank,Circle
+157B,Circle Lido,Alajo Taxi Rank
+159A,Alajo Junction,Kotobabi Police Station
+159B,Kotobabi Police Station,Alajo Junction
+163A,Apapa Station,Accra New Tema Station
+163B,Accra New Tema Station,Apapa Station
+164A,Arena Station,Kanashie Mkt Cmplx
+164B,Kaneshie Mkt Cmplx,Arena Station
+165A,Arena Station,Ordorkor
+165B,Odorkor Station,Arena Station
+166A,Arena Station,Russia
+166B,Russia,Arena Station
+167A,Atico,Kaneshie Mkt Cmplx
+167B,Kaneshie Mkt Cmplx,Atico
+170A,Banana Inn Station,Accra Post Office
+170B,Accra Post Office,Banana Inn Laststop
+172A,Banana Inn Station,Accra New Tema Station
+172B,Tema Station,Banana Inn
+173A,Bishop Station,Cantonments Station
+173B,Cantonments Station,Bishop Station
+174A,Bubiashie Ayigbe Town,Circle Odorna Station
+174B,Bubiashie Atico Station,Ayigbe Town
+175A,Bubiashie Station,Circle Odorna Station
+175B,Bubiashie Atico Station,Bubiashie Station
+176A,Bubiashie Atico,Circle Odorna Station
+176B,Bubiashie Atico Station,Bubiashie Atico
+177A,Bubiashie Ayigbe Town,Accra CMB
+177B,Accra CMB,Bubiashie Ayigbe Town
+178A,Bubiashie Control,Kaneshie Mkt Cmplx
+178B,Kaneshie Mkt Cmplx,Bubiashie Control
+185A,Chorkor Station,Agbobloshie Station
+185B,Agbobloshie Station,Chorkor Station
+186A,Circle Opps. Vodafone,Abelemkpe Station
+186B,Abelemkpe Station,Circle
+188A,Circle Odorna Station,Asore Danho
+188B,Asore Danho,Circle
+192A,Circle Odorna Station,Fadama Last Stop
+192B,Fadama Last Stop,Circle
+193A,Circle Odorna Station,Immesco
+193B,Immesco,Circle
+196A,Circle Lido,Kotobabi Down Station
+196B,Kotobabi Down Station,Circle
+200A,Circle Odorna Station,New Melcom
+200B,New Melcom,Circle
+201A,Circle Opps. Vodafone,New Town Timber Market
+201B,New Town Timber Market,Circle Opps. Vodafone
+202A,UTC Station,Novotel
+202B,Novotel,Circle
+203(1)A,Circle Odorna Station,Orgle Road Station
+203(1)B,Orgle Road Station,Circle
+203(2)A,Circle Odorna Station,Orgle Road Station
+203(2)B,Orgle Road Station,Circle
+204A,UTC Station,Osu Blow Up
+204B,Osu Blow Up,Circle
+205A,UTC Station,Osu RE
+205B,Osu RE,Circle
+206A,UTC Station,Osu RE
+206B,Osu RE,Circle
+207A,Circle Coporative Station,Ridge Hospital
+207B,Ridge Hospital,Circle Coporative Station
+208A,UTC Station,Osu Blow Up
+208B,Osu Blow Up,UTC Station
+209A,Circle Odorna Station,Swanlake Laststop
+209B,Swanlake Laststop,Circle
+210A,Circle Near Las Palmas (PROTOA),Teachers Hall
+210B,Teachers Hall,Circle
+211A,Circle Overhead Station,Tema Main Station
+211B,Tema C'mty One,Circle
+212A,Circle Coporative Station,Accra New Tema Station
+212B,Tema Station,Circle
+214A,Circle Coporative Station,WAEC
+214B,WAEC,Circle Coporative Station
+216A,Circle Lido,Abeka lapaz
+216B,Abeka lapaz,Circle
+219A,Circle Lido,Abeka lapaz
+219B,Abeka lapaz,Circle
+221A,Circle Overhead (Maame Dokono),Madina Station
+221B,Madina Station,Circle Overhead (Maame Dokono)
+222A,Lido Terminal (Circle Overhead),Maamobi-Nima Terminal
+222B,Maamobi-Nima Terminal,Lido Terminal (Circle Overhead)
+223A,Accra CMB,Ablekuma
+223B,Ablekuma,Accra CMB
+224A,Accra CMB,Alajo Taxi Rank
+224B,Alajo Taxi Rank,Accra CMB
+225A,Accra CMB,Fan Milk
+225B,Fan Milk,Accra CMB
+226A,Circle Odor Rise,Pig Farm Station
+226B,Pig Farm Station,Kokomlemle
+227A,Accra CMB,Manhean Station
+227B,Manhean Station,Accra CMB
+228A,Accra CMB,Odorkor Station
+228B,Odorkor Station,Accra CMB
+230A,Accra CMB,Omanjor Station
+230B,Omanjor Station,Accra CMB
+231A,Accra CMB,Weija Station
+231B,Weija Station,Accra CMB
+232A,Accra CMB,Madina Station
+232B,Madina Station,Accra CMB 2
+235A,Dansoman Laststop,Achimota Station
+235B,Achimota,Dansoman Laststop
+236A,Agege,Arena Station
+236B,Arena Station,Last Stop (SSNIT Market)
+237A,Dansoman Laststop,Anyaa Market Station
+237B,Anyah Station,Dansoman Laststop
+238A,Dansoman Laststop,Circle Odorna Station
+238B,Circle,Dansoman Laststop
+239A,Dansoman Laststop,Mallam Station
+239B,Mallam Station,Dansoman Laststop
+240A,Dansoman Laststop,Nyamekye
+240B,Nyamekye,Dansoman Laststop
+241A,Circle Overhead Station,Baweleshi
+241B,Bawalashie,Circle
+242A,Dansoman Laststop,Odorkor Station
+242B,Odorkor Station,Dansoman Laststop
+243A,Dansoman Laststop,Santa Maria
+243B,Santa Maria,Dansoman Laststop
+244A,Agege,New Tema Station
+244B,New Tema Station,Dansoman Laststop
+246A,Dansoman Laststop,Mallam Junction
+246B,Mallam Station,Dansoman Laststop
+247A,Darkuman Station,Agbogbloshie Station No. 2
+247B,Agbogbloshie Station No. 2,Darkuman Station
+248A,Darkuman Station,Accra CMB
+248B,Accra CMB,Darkuman Station
+249A,Darkuman Station,Kaneshie Mkt Cmplx
+249B,Kaneshie Mkt Cmplx,Darkuman
+251A,Darkuman Station,Accra Post Office
+251B,Accra Post Office,Darkuman Station
+254A,Dzorwulu Station,Kokomlemle
+254B,Circle Odor Rise,Dzorwulu Station
+255A,East Legon,Circle Odorna Station
+255B,Circle Odorna Station,East Legon
+256A,Adjiringanor Station,Accra New Tema Station
+256B,Accra New Tema Station,Adjiringanor Station
+260A,Ebenezer,Accra Bishop
+260B,Accra Bishop,Ebenezer
+262A,Glefe,Accra Bishop
+262B,Accra Bishop,Glefe
+263A,Darkuman,Haasto
+263B,Haatso,Darkuman
+264A,Hansonic,Dansoman Laststop
+264B,Dansoman Laststop,Hansonic
+265A,Kaneshie Mkt Cmplx,Sukura Station
+265B,Sukura Station,Kaneshie Mkt Cmplx
+266A,Kaneshie Mkt Cmplx,Afropa
+266B,Afropa,Kaneshie Mkt Cmplx
+267A,Kaneshie Mkt Cmplx,Soko Station
+267B,Soko Station,Kaneshie Mkt Cmplx
+269A,Kaneshie Mkt Cmplx,Bubiashie Station
+269B,Bubiashie Station,Kaneshie Mkt Cmplx
+270A,Kaneshie Mkt Cmplx,Camara Station
+270B,Camara Station,Kaneshie Mkt Cmplx
+271A,Kaneshie Mamprobi Station,Chorkor Station
+271B,Chorkor Station,Kaneshie Mamprobi Station
+273A,Kaneshie Mamprobi Station,Korle bu Station
+273B,Korle Bu Station,Kaneshie Mamprobi Station
+274A,Kaneshie Mkt Cmplx,Maamobi-Nima Terminal
+274B,Maamobi-Nima Terminal,Kaneshie Mkt Cmplx
+275A,Kaneshie Mkt Cmplx,Adenta Station
+275B,Adenta Station,Kaneshie Mkt Cmplx
+276A,Kaneshie Mamprobi Station,Mamponse Station
+276B,Mamponse Station,Kaneshie Mkt Cmplx
+277A,Kaneshie Mamprobi Station,Mamprobi Alhaji
+277B,C,Kaneshie Mamprobi Station
+278A,Kanashie Mkt Cmplx,New Town Station
+278B,New Town Station,Bus Stop 278
+281A,Kaneshie Mkt Cmplx,Russia
+281B,Russia,Kaneshie Mkt Cmplx
+282A,Kaneshie Mamprobi Station,Shalom Station
+282B,Shalom Station,Kaneshie Mkt Cmplx
+283A,Kaneshie Mkt Cmplx,Makola Tudu
+283B,Makola Tudu,Kaneshie Mkt Cmplx
+284A,Kaneshie Mkt Cmplx,Agyapaye Station
+286A,Kaneshie Mkt Cmplx,New Fadama
+286B,New Fadama,Kaneshie Mkt Cmplx
+287A,Kaneshie Mkt Cmplx,Old Melcom 2
+287B,North Industrial Area,Kaneshie Mkt Cmplx
+288A,Kaneshie Mkt Cmplx,Swanlake Laststop
+288B,Swanlake Laststop,Kaneshie Mkt Cmplx
+290A,Kaneshie Mkt Cmplx,Dansoman Laststop
+290B,Dansoman Laststop,Kaneshie Mkt Cmplx
+291A,Kaneshie Mkt Cmplx,Korle Bu Station
+291B,Korle Bu Station,Kaneshie Mkt Cmplx
+293A,Kaneshie Mkt Cmplx,Mamprobi C. Lante
+293B,Mamprobi C. Lante,Kaneshie Mkt Cmplx
+295A,Kaneshie Mkt Cmplx,New Russia
+295B,New Russia,Kaneshie Mkt Cmplx
+296A,Kaneshie Mkt Cmplx,Russia
+296B,Russia,Kaneshie Mkt Cmplx
+298A,Dzorwulu Station,Kokomlemle
+298B,Kokomlemle,Dzorwulu Station
+299A,Korle Bu Station,Abeka lapaz
+299B,Abeka lapaz,Korle Bu Station
+300A,Korle Bu Station,Abeka lapaz
+300B,Abeka lapaz,Korle Bu Station
+301A,Korle Bu Station,Kasoa Station
+302A,Korle Bu Station,Kwashieman Station
+302B,Kwashieman Station,Korle Bu Station
+303A,Korle Bu Station,Mallam Station
+303B,Mallam Station,Korle Bu Station
+305A,Kaneshie Mkt Cmplx,Dansoman Laststop
+305B,Dansoman Laststop,Kaneshie Mkt Cmplx 
+306A,Korle Bu Station,Darkuman Station
+307A,Kotobabi Down Station,37 Station
+307B,37 Station,Kotobabi Down Station
+308A,Kotobabi Down Station,Accra CMB
+308B,Accra CMB,Kotobabi Down Station
+309A,Kotobabi Down Station,Circle Lido
+309B,Circle Lido,Kotobabi Down Station
+310A,Kotobabi Down Station,Abeka lapaz
+310B,Abeka lapaz,Kotobabi Down Station
+311A,Kotobabi Down Station,Accra New Tema Station
+311B,Accra New Tema Station,Kotobabi Down Station
+313A,Kwashieman Station,A-Lang Station
+313B,A-Lang Station,Kwashieman Station
+314A,Kwashieman Station,Achimota Station
+314B,Achimota,Kwashieman Station
+317A,Kwashieman Station,Abeka lapaz
+317B,Abeka lapaz,Kwashieman Station
+318A,Kwashieman Station,Madina Station
+321A,Kwashieman Station,Tema Habour
+321B,Tema Habour,Kwashieman Station
+322A,Kwashieman Station,Accra CMB
+322B,Accra CMB,Kwashieman Station
+324A,Kwashieman Station,Auntie Aku station
+324B,Auntie Aku station,Kwashieman Station
+325A,Kwashieman Station,Santa Maria
+325B,Santa Maria,Kwashieman Station
+326A,Kwashieman Station,Sowutuom Station
+326B,Sowutuom Station,Kwashieman Station
+328A,Kwashieman Station,Rawlings Park
+328B,Rawlings Park,Kwashieman Station
+331A,Abeka lapaz,Accra Novotel
+331B,Accra New Tema Station,Abeka lapaz
+333A,Abeka lapaz,Adenta Station
+333B,Adenta Station,Abeka lapaz
+334A,Abeka lapaz,Agbogba
+334B,Agbogba,Abeka lapaz
+336A,Abeka lapaz,Alhaji
+336B,Alhaji,Abeka lapaz
+337A,Abeka lapaz,Ashaiman Overhead
+337B,Ashaiman Station,Abeka lapaz
+338A,Abeka lapaz,Lomnava Station
+339A,Abeka lapaz,Madina Station
+339B,Madina Station,Abeka lapaz
+342A,Abeka lapaz,Omanjor Station
+342B,Omanjor Station,Abeka lapaz
+343A,Abeka lapaz,Race Course
+343B,Race Course,Abeka lapaz
+344A,Abeka lapaz,Santa Maria
+344B,Santa Maria,Abeka lapaz
+345A,Kotobabi Down Station,Achimota Station
+345B,Achimota,Kotobabi Down Station
+347A,Abeka lapaz,Tema Main Station
+347B,Tema Main Station,Abeka lapaz
+348A,Abeka lapaz,Tetteh Quarshie
+348B,Tetteh Quarshie,Abeka lapaz
+349A,Abeka lapaz,Yellow House
+349B,Yellow House,Abeka lapaz
+351A,Legon Station,Dome Station
+351B,Dome Station,Legon Station
+353A,Legon Station,Social Welfare
+353B,Social Welfare,Legon Station
+356A,Mallam Attah Station,Achimota Station
+356B,Achimota Station,Mallam Atta Station
+357A,Mallam Atta Station,Kotobabi Down Station
+357B,Kotobabi Down Station,Mallam Atta Station
+363A,Mataheko New Russia Station,Kaneshie Mkt Cmplx
+363B,Kaneshie Mkt Cmplx,Mataheko New Russia Station
+366B,Agbogbloshie Station No. 2,New Fadama
+367A,New Fadama,Accra CMB
+367B,Accra CMB,New Fadama
+368A,Accra New Tema Station,Abelemkpe Station
+368B,Abelemkpe Station,Accra New Tema Station
+369A,Accra New Tema Station,Agbogbloshie Station
+369B,Agbogbloshie Station,Accra New Tema Station
+373A,Accra New Tema Station,Dzorwulu Station
+373B,Dzorwulu Station,Accra New Tema Station
+376A,Accra New Tema Station,Pig Farm Station
+376B,Pig Farm Station,Accra New Tema Station
+377A,F,Ashongman
+377B,Ashongman,Abeka lapaz
+378A,Abeka lapaz,Last stop
+378B,Awoshie Station,Abeka lapaz
+380A,Abeka lapaz,5 Haatso station
+380B,Haatso,Abeka lapaz
+381A,H,Israel Station
+381B,Israel Station,Abeka lapaz
+383A,Accra New Tema Station,Ashaiman Station
+383B,Ashaiman Station,Accra New Tema Station
+384A,Accra New Tema Station,Tema Main Station
+384B,Tema Main Station,Accra New Tema Station
+385A,New Town Station,37 Station
+385B,37 Station,New Town Station
+386A,New Town Station,Adenta Station
+386B,Adenta Station,New Town Station
+387A,New Town Station,Ashaley Botwe
+387B,Ashaley Botwe,New Town Station
+388A,New Town Station,Kasoa Station
+388B,Kasoa Station,New Town Station
+389A,New Town Station,Madina Station
+389B,Madina Station,New Town Station
+391A,New Town Station,Nima Overhead Station
+391B,Nima Overhead Station,Accra New Town Station
+393A,Nima Overhead Station,Accra New Tema Station
+393B,Accra New Tema Station,Nima Overhead Station
+394A,Nima Overhead Station,Ashaiman Station
+394B,Ashaiman Station,Nima Overhead Station
+395A,Nima Overhead Station,Circle
+395B,Circle Lido,Nima Overhead Station
+397A,Nima Overhead Station,Madina Station
+397B,Madina Station,Nima Overhead Station
+398A,Nima Overhead Station,Ashaiman Station
+398B,Ashaiman Station,Nima Overhead Station
+399A,Nima Overhead Station,Achimota Station
+399B,Achimota Station,Nima Overhead Station
+400A,Nima Overhead Station,Alajo Station
+400B,Alajo Station,Nima Overhead Station
+401A,Nima Overhead Station,Israel Station
+401B,Israel Station,Nima Overhead Station
+402A,Nima Overhead Station,Awoshie Station
+402B,Awoshie Station,Nima Overhead Station
+403A,Nima Overhead Station,Accra CMB
+403B,Accra CMB,Nima Overhead Station
+404A,Nima Overhead Station,Dome Railway Crossing
+404B,Dome Railway Crossing,Nima Overhead Station
+405A,Nima Overhead Station,Abeka lapaz
+405B,Abeka lapaz,Nima Overhead Station
+406A,Nima Overhead Station,Mallam Station
+406B,Mallam Station,Nima Overhead Station
+408A,Nima Overhead Station,Amasaman
+409A,Nima Overhead Station,Sowutuom Station
+409B,Sowutuom Station,Nima Overhead Station
+410A,Nima Overhead Station,Sukura Station
+410B,Sukura Station,Nima Overhead Station
+412A,Nima Overhead Station,Agbobloshie Station No. 2
+412B,Agbobloshie Station,Nima Overhead Station
+414A,Nima Overhead Station,Madina Station
+414B,Madina Station,Nima Overhead Station
+415A,Nima Overhead Station,Nyaho
+415B,Nyaho,Nima Overhead Station
+416A,New Tema Station,Cantonments Station
+416B,Cantonments Station,New Tema Station
+417A,Nima Overhead Station,Accra New Tema Station
+417B,Accra New Tema Station,Nima Overhead Station
+419A,Odorna Station,Agblezah Station
+419B,Agblezah Station,Circle
+420A,New Tema Station,New Town Station
+420B,New Town Station,New Tema Station
+421A,Circle Near Las Palmas (PROTOA),Ashiaman Station
+421B,Ashiaman Station,Circle Odorna Station
+422A,Circle,Adenta Station
+422B,D,Circle Odorna Station
+423A,Odorna Station,Nima Overhead Station
+423B,Nima Overhead Station,Odorna Station
+424A,Odorna Station,Nungua Station
+424B,Nungua Station,Odorna Station
+425A,Circle,Nungua Station
+425B,Nungua Station,Circle Odorna Station
+428A,Circle,Tsui Bleeo
+428B,Tsui Bleeo,Circle Odorna Station
+431A,Circle Odorna Station,Korle Bu Station
+431B,Korle Bu Station,Circle Odorna Station
+434A,Odorkor Station,Anyah Station
+434B,Anyah Station,Odorkor Station
+435A,Odorkor Station,Kasoa Station
+435B,Kasoa Station,Odorkor Station
+436A,Odorkor Station,Official Town
+436B,Official Town,Odorkor Station
+437A,Odorkor Station,Sakaman
+437B,Sakaman,Odorkor Station
+438A,Odorkor Station,Accra New Tema Station
+438B,Accra New Tema Station,Odorkor Station
+441A,Okponglo Taxi Station,American House
+441B,American House,Okponglo Taxi Station
+442A,Okponglo Taxi Station,Bawalashie
+442B,Bawalashie,Okponglo Taxi Station
+443A,Okponglo Taxi Station,Christian
+443B,Christian,Okponglo Taxi Station
+444A,Opetekwei Station,Agbogbloshie Station
+444B,Agbogbloshie Station No. 2,Opetekwei Station
+445A,Opetekwei Station,Circle
+445B,Circle Odorna Station,Opetekwei Station
+446A,Opetekwei Station,Kaneshie Mkt Cmplx
+446B,Kaneshie Mkt Cmplx,Opetekwei Station
+447A,Opetekwei Station,Accra New Tema Station
+447B,Accra New Tema Station,Opetekwei Station
+449A,Orgle Road Station,Kaneshie Mkt Cmplx
+449B,Kaneshie Mkt Cmplx,Orgle Road Station
+452A,Orgle Road Station,Kaneshie Mkt Cmplx
+452B,Kaneshie Mkt Cmplx,Orgle Road Station
+454A,Osu Blow Up,Circle Odorna Station
+454B,Circle,Osu Blow Up
+455A,Osu Blow Up,Kaneshie Mkt Cmplx
+455B,Kaneshie Mkt Cmplx,Osu Blow Up
+456A,Osu Blow Up,Madina Station
+456B,Madina Station,Osu Blow Up
+458A,Pig Farm Station,Accra CMB
+458B,Accra CMB,Pig Farm Station
+463A,Accra Post Office,Mamprobi
+463B,Mamprobi,Accra Post Office
+467A,Rawlings Park,Blue Lagoon
+467B,Blue Lagoon,Rawlings Park
+468A,Rawlings Park,La Olympia Station
+468B,La Olympia Station,Rawlings Park
+469A,Rawlings Park,Nungua Station
+469B,Nungua Station,Rawlings Park
+470A,Rawlings Park,Osu Penta
+470B,Osu Penta,Rawlings Park
+472A,Salaga Station,Alhaji Station
+472B,Alhaji Station,Salaga Station
+473A,Salaga Station,Chemuna Station
+473B,Chemuna Station,Salaga Station
+474A,Salaga Station,Appiah Danquah
+474B,Appiah Danquah,Salaga Station
+476A,Salaga Station,Camara Station
+476B,Camara Station,Salaga Station
+480A,Shiabu,Agbogbloshie Station No. 2
+480B,Agbogbloshie Station No. 2,Shiabu
+485A,Soko Station,Accra Post Office
+485B,Accra Post Office,Soko Station
+486A,Soko Station,Accra Post Office Station
+486B,Accra Post Office Station,Soko Station
+488A,Sukura Station,Arena Station
+488B,Arena Station,Zamrara Line
+490A,Sukura Station,Nima Overhead Station
+490B,Nima Overhead Station,Zamrara Line
+492A,Kaneshie Mkt Cmplx,Tabora Alhaji Station
+492B,Tabora Alhaji Station,Kaneshie Mkt Cmplx
+520A,Accra New Tema Station,Camara Station
+520B,Camara Station,Accra New Tema Station
+521A,Accra New Tema Station,Chemuna Station
+521B,Chemuna Station,Accra New Tema Station
+522A,Accra New Tema Station,Sukura Station
+522B,Sukura Station,Accra New Tema Station
+523A,Accra New Tema Station,Trade Fair
+523B,Trade Fair,Accra New Tema Station
+524A,Accra New Tema Station,Banana Inn Taxi Station
+524B,Banana Inn Station,Accra New Tema Station
+535A,Zamrara Line,Agbogbloshie Station No. 2
+535B,Agbogbloshie Station No. 2,Zamrara Line
+536A,Zamrara Line,Arena Station
+536B,Arena Station,Zamrara Line
+538A,Zamrara Line,Kaneshie Mkt Cmplx
+538B,Kaneshie Mkt Cmplx,Zamrara Line
+539A,Zamrara Line,Circle Odorna Station
+539B,Circle Odorna Station,Zamrara Line
+540A,Zongo Junction,Agege
+540B,Agege,Zongo Junction
+542A,Zongo Junction,Chorkor Station
+542B,Chorkor Station,Zongo Junction
+543A,Zongo Junction,Kasoa Station
+543B,Kasoa Station,Zongo Junction
+544A,Zongo Junction,Korle Bu Station
+544B,Korle Bu Station,Zongo Junction
+990A,Circle,SSNIT Flat Station
+994A,Rawlings Park,Chemuna Station
+994B,Chemuna Station,Rawlings Park
+995A,Accra New Tema Station,Zamrara Line
+995B,Zamrara Line,Accra New Tema Station
+996A,Maamobi-Nima Terminal,Circle
+996B,Odorna Station,Maamobi-Nima Terminal
+997A,Circle Odorna Station,Orgle Road Station
+997B,Circle Opps. Vodafone,UTC Station
+998A,Circle Overhead (Maame Dokono),Ashaiman Station
+998B,Ashaiman Station,Circle Overhead Station
+999A,Abeka lapaz,Sowutuom Station
+999B,Sowutuom Station,Abeka lapaz
+Grand Total,#N/A,#N/A

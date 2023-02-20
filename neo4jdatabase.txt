@@ -1,0 +1,67 @@
+CREATE CONSTRAINT ON (s:Stop) ASSERT s.id IS UNIQUE
+
+LOAD CSV WITH HEADERS FROM "file:///stops-no-dp.csv" AS line 
+CREATE (s:Stop { stop_name: line.stop_name, id: line.stop_id, stop_lat:line.stop_lat, stop_long: line.stop_lon})
+
+
+LOAD CSV WITH HEADERS FROM "file:///final-edgelist.csv" AS line 
+MATCH (s1:Stop),(s2:Stop) where s1.id=line.stopA and s2.id=line.stopB
+CREATE (s1)-[:IS_CONNECTED_TO{trip:line.trip, distance: toInt(line.distance), time: line.time}]->(s2)
+
+//Find shortest path from Accra Mall Roundabout to Mallam Junction
+MATCH path=shortestPath((stop_A:Stop{id:"S6117"})-[*0..15]-(stop_B:Stop {id:"S5392"}))
+RETURN path
+
+MATCH path=allShortestPaths((stop_A:Stop{id:"S6117"})-[rels*0..10]-(stop_B:Stop {id:"S5392"}))
+RETURN length(path) AS stop_count, length(FILTER(index IN RANGE(1, length(rels)-1) WHERE (rels[index]).bus <> (rels[index - 1]).bus)) AS transfer_count
+
+
+
+//Get total distance after running shortest path function
+MATCH path=allshortestPaths((stop_A:Stop{id:"S6117"})-[IS_CONNECTED_TO*..]-(stop_B:Stop {id:"S5382"}))
+RETURN reduce(distance=0, r in relationships(path) | distance+toInt(r.distance)) AS TOTAL
+
+
+LOAD CSV WITH HEADERS FROM "file:///edgelist-with-routename.csv" AS line 
+MATCH (s1:Stop),(s2:Stop) where s1.id=line[1] and s2.id=line[2]
+CREATE (s1)-[:{distance: line.distance, time: line.time}]->(s2)
+
+
+
+MATCH path=allShortestPaths((stop_A:Stop{id:"S6117"})-[rels*..15]->(stop_B:Stop {id:"S5382"}))
+RETURN length(path) AS stop_count, length(FILTER(index IN RANGE(1, length(rels)-1) WHERE (rels[index]).trip <> (rels[index - 1]).trip)) AS transfer_count
+
+
+curl -i -d "@dijkstra.json"  -u neo4j:admin -H"Content-type:application/json" http://localhost:7474/db/data/node/10958/path
+curl -i -uneo4j:admin http://localhost:7474/db/data/node/10958/properties
+
+
+//SET OUTGOING/INCOMING ROUTES PROPERTY ON EACH NODE
+LOAD CSV WITH HEADERS FROM "file:///outgoing-routes.csv" AS line 
+MATCH (s:Stop) WHERE s.id = line.stop
+SET s.out_route = []
+
+LOAD CSV WITH HEADERS FROM "file:///incoming-routes.csv" AS line 
+MATCH (s:Stop) WHERE s.id = line.stop
+SET s.in_route = []
+
+
+LOAD CSV WITH HEADERS FROM "file:///outgoing-routes.csv" AS line 
+MATCH (s:Stop) WHERE s.id = line.stop
+SET s.out_route = s.out_route + line.route
+
+LOAD CSV WITH HEADERS FROM "file:///incoming-routes.csv" AS line 
+MATCH (s:Stop) WHERE s.id = line.stop
+SET s.in_route = s.in_route + line.route
+
+
+LOAD CSV WITH HEADERS FROM "file:///routenames.csv" AS line 
+MATCH p=()-[r:IS_CONNECTED_TO]->()  WHERE r.trip = line.route
+SET r.from_terminal = line.from_terminal, r.to_terminal = line.to_terminal
+
+MATCH (n:Stop) WHERE n.stop_name STARTS WITH "Ok"
+RETURN n.stop_name, n.id ORDER BY n.stop_name ASC
+UNION
+MATCH (n:Stop) WHERE n.stop_name STARTS WITH "Ok" 
+RETURN n.stop_name, n.id ORDER BY n.stop_name ASC
+

@@ -1,0 +1,9 @@
+{
+  "to" : "http://localhost:7474/db/data/node/16116",
+  "cost_property" : "distance",
+  "relationships" : {
+    "type" : "IS_CONNECTED_TO",
+    "direction" : "out"
+  },
+  "algorithm" : "dijkstra"
+}

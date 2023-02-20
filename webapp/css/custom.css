@@ -1,0 +1,319 @@
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+/* Final Project Custom Styles */
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/Avenir-lt-65.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Product';
+  src: url('../fonts/psans.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+	height: 100% !important;
+	background-color: gray;
+	font-family: "Avenir", "Lato", Helvetica, Arial, sans-serif;
+}
+
+.sidebar{
+	overflow-y: scroll;
+    height:100vh;
+    width:354px;
+	background-color: white;
+	padding: 20px;
+/*	padding-left: 15px;*/
+	position: absolute;
+	z-index: 2000;
+}
+
+label{
+	font-size: 12px;
+	margin-right: 12px;
+}
+
+.sidebar input[type=text]{
+	background-color: rgba(0, 0, 0, 0) !important;
+	border: none !important;
+/*	border-bottom: 1px solid black !important;*/
+	font-size: 12px;
+	width: 200px;
+	opacity: 0.6;
+}
+
+.sidebar input[type=text]:focus{
+	outline: 0px;
+	opacity: 1;
+}
+
+.clearfix{
+	border-bottom: 0.3px solid #CAC8C9 !important;
+	margin-right: 40px;
+	margin-bottom: 5px;
+}
+
+.select-div{
+	padding: 0px;
+	margin-top: 20px;
+	display: inline-block;
+}
+
+.select-div ul.dropdown{
+	
+}
+
+.select-div select *{
+	font-size: 12px;
+}
+
+.select-div .dropdown-toggle{
+	padding-left: 0px !important;
+	background-color: transparent;
+	width: 170px;
+	border-bottom: 0px !important;
+}
+
+.dropdown-toggle span.filter-option{
+	left: 0px !important;
+	font-size: 12px;
+	color: black;
+	
+}
+
+.select.mbn.open .dropdown-toggle{
+	background-color: transparent;
+}
+
+.select-div .caret{
+	color: black;
+	border-bottom-color: black;
+	border-top-color: black;
+	right: 0px !important; 
+	top: 17px !important;
+}
+
+.open .dropdown-arrow{
+	opacity: 0 !important;
+}
+
+.select-div .dropdown-menu{
+	font-size: 12px;
+	margin-top: 0px !important;
+	min-height: 66px !important;
+}
+
+.selected a{
+	background-color:  rgb(225, 228, 231) !important;
+	color: black !important;
+}
+
+.select-clearfix{
+	margin-right: 0px;
+	margin-top: 10px;
+}
+
+
+
+
+.route-summary .title{
+	font-family: "Product","Avenir", "Lato", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	margin-bottom: 3px;
+}
+
+.route-summary .first-action{
+	font-size: 12px;
+	margin-bottom: 0px;
+	display: inline-block;
+}
+
+.route-summary{
+/*	border: 0.5px solid black;*/
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.results{
+	padding-top: 10px;
+}
+
+.route-tags{
+	margin-top: 7px;
+	width: 100%;
+	height: 40px;
+	overflow-x: scroll;
+	white-space: nowrap;
+}
+
+.route-tags p, .tag{
+	display: inline-block;
+	margin: 0 1px;
+	padding:5px 10px;
+	color: white;
+	font-size: 9px;
+}
+
+.rt1{
+	background-color: #F1CA00;
+}
+
+.rt2{
+	background-color: #65B529;
+}
+
+.rt3{
+	background-color: #B60F03;
+}
+
+.rt4{
+	background-color: #2D2D86;
+}
+
+.rt5{
+	background-color: #001B59;
+}
+
+.rt6{
+	background-color: #165E31;
+}
+
+.rt7{
+	background-color: #2196f3;
+}
+
+.rt8{
+	background-color: #e65100;
+}
+
+.rt9{
+	background-color: #ad1457;
+}
+
+.rt10{
+	background-color: #7b1fa2;
+}
+
+.more-link{
+	background-color: #969A98;
+	width: 30px;
+/*	height: 30px;*/
+	padding: 5px;
+	border-radius: 3px;
+	display: inline-block;
+	float: right;
+	margin-right: 5px;
+}
+
+.more-link:hover{
+	cursor: pointer;
+}
+
+
+.instruction{
+	margin-top: 10px;
+	visibility: hidden;
+	display: none;
+}
+
+.instruction-clearfix{
+	visibility: hidden;
+	display: none;
+}
+
+.instruction p{
+	font-size: 12px !important;
+	display: block;
+	margin-bottom: 0px;
+}
+
+.instruction a{
+	font-size: 11px;
+	color: #1657B7;
+	display: inline-block!important;
+}
+
+.instruction .tag{
+	float: right;
+	font-size: 9px !important;
+	margin: 0px 0px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+.suggestions{
+	top: auto;
+	font-size: 12px;
+	left: 57px;
+	width: 240px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.suggestions.open{
+	visibility: visible;
+	opacity: 1;
+}
+
+#end-suggestions{
+	top: 85px !important;
+}
+
+.disabled{
+	cursor: default;
+}
+
+.link-behaviour{
+	cursor: pointer;
+}
+
+.go-link{
+	font-size: 12px;
+	color: #1657B7;
+	font-family: "Product","Avenir", "Lato", Helvetica, Arial, sans-serif;
+	display: inline-block;
+	position: relative;
+	margin-top: 23px;
+	padding-left: 60px;
+}
+
+.go-link:hover{
+	font-size: 12px;
+	color: #1657B7;
+	text-decoration: underline;
+}
+
+.transit-action{
+	width: 350px;
+}
+
+.expand .instruction,
+.expand .instruction-clearfix{
+	visibility: visible;
+	display: block;
+}
+
+
+#map{
+	height: 100vh;
+	margin-left: 354px; 
+	width: auto;
+
+}
+
+.oops .title{
+	text-align: center;
+	font-family: "Product","Avenir", "Lato", Helvetica, Arial, sans-serif;
+	color: #1B4E74;
+}
+
+.oops img{
+	width: 250px;
+	margin: 0 auto;
+}
